@@ -29,30 +29,15 @@
     </section>
 
     <section id="menu">
-        <h2>Our Menu</h2>
+        <h2>Our Menu & Daily Specials</h2>
         
-        <div class="menu-grid">
-            <div class="menu-card">
-                <h3>Appetizers</h3>
-                <p>Kickstart your dining experience with our crispy garlic bruschetta, stuffed mushrooms, and signature spicy glazed chicken wings.</p>
-            </div>
-            
-            <div class="menu-card">
-                <h3>Main Courses</h3>
-                <p>Indulge in our chef's specialties, featuring prime herb-crusted ribeye steak, creamy tuscan salmon, and homemade wild mushroom fettuccine.</p>
-            </div>
-            
-            <div class="menu-card">
-                <h3>Desserts</h3>
-                <p>Satisfy your sweet tooth with our decadent warm molten chocolate lava cake, classic vanilla bean crème brûlée, and fresh seasonal fruit tarts.</p>
-            </div>
-            
-            <div class="menu-card">
-                <h3>Beverages</h3>
-                <p>Refresh yourself with our selection of artisanal mocktails, freshly squeezed tropical juices, and premium roasted coffee blends.</p>
-            </div>
+        <div class="filter-buttons-container" style="text-align: center; margin-bottom: 20px;">
+            <button class="filter-btn" data-category="all" style="padding: 8px 16px; margin: 5px; cursor: pointer;">All Items</button>
+            <button class="filter-btn" data-category="appetizer" style="padding: 8px 16px; margin: 5px; cursor: pointer;">Appetizers</button>
+            <button class="filter-btn" data-category="main" style="padding: 8px 16px; margin: 5px; cursor: pointer;">Main Courses</button>
+            <button class="filter-btn" data-category="dessert" style="padding: 8px 16px; margin: 5px; cursor: pointer;">Desserts</button>
         </div>
-        <h3 style="margin-top: 30px; text-align: center;">Today's Maasai Specials</h3>
+        
         <div id="dynamic-services-container" class="menu-grid"></div>
     </section>
 
@@ -79,7 +64,7 @@
             <p id="form-feedback"></p>
         </form>
     </section>
-    
+
     <div class="bottom-photo-container">
         <img src="images/banner.jpeg" alt="Dreamland Restaurants Dining Ambiance" class="bottom-photo" width="1000" height="400">
     </div>

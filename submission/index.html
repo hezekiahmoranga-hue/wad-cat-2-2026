@@ -60,8 +60,26 @@
         <h2>Contact Us</h2>
         <p>For reservations and inquiries, please contact us at:</p>
         <p><strong>Phone:</strong> 0745613876</p>
-    </section>
 
+        <form id="resort-form" class="simple-form">
+            <div>
+                <label>Full Name:</label>
+                <input type="text" id="guest-name">
+            </div>
+            <div>
+                <label>Email Address:</label>
+                <input type="email" id="guest-email">
+            </div>
+            <div>
+                <label>Message:</label>
+                <textarea id="guest-message" rows="3"></textarea>
+            </div>
+            <button type="submit">Submit Inquiry</button>
+            
+            <p id="form-feedback"></p>
+        </form>
+    </section>
+    
     <div class="bottom-photo-container">
         <img src="images/banner.jpeg" alt="Dreamland Restaurants Dining Ambiance" class="bottom-photo" width="1000" height="400">
     </div>

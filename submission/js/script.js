@@ -75,3 +75,27 @@ resortForm.addEventListener('submit', function(event) {
         resortForm.reset(); // Clears the form inputs
     }
 });
+// FEATURE 4: Minimalist Theme Switcher
+const toggleBtn = document.getElementById('theme-toggle');
+
+toggleBtn.addEventListener('click', function() {
+    // If background is dark, make it white. Otherwise, make it grey.
+    if (document.body.style.backgroundColor === "rgb(51, 51, 51)") {
+        document.body.style.backgroundColor = "#ffffff";
+        document.body.style.color = "#000000";
+    } else {
+        document.body.style.backgroundColor = "#333333";
+        document.body.style.color = "#ffffff";
+    }
+});
+// FEATURE 5: Minimalist Calculator
+const nightsInput = document.getElementById('stay-nights');
+const resultText = document.getElementById('calc-result');
+
+nightsInput.addEventListener('input', function() {
+    const nights = nightsInput.value;
+    const total = nights * 7500;
+    
+    // Update the text on the screen
+    resultText.textContent = "KSh " + total;
+});
